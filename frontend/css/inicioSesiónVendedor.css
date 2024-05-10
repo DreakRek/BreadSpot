@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1500px;
+    display: flex;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+form{
+    width: 810px;
+    text-align: center;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    align-items: start;
+    size: 45px;
+    margin-left: 70px;
+
+}
+
+.emailusuario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5% 0px 5% 5%;
+}
+.emailusuario input{
+    height: 30px;
+    width: 555px;
+    margin-left: 30px;
+}
+.contraseñausuario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5% 0px 5% 5%;
+}
+.contraseñausuario input{
+    height: 30px;
+    width: 555px;
+    margin-left: 30px;
+}
+
+.iniciarsesionusuario{
+    width: 650px;
+    height: 770px;
+
+}
+.inicioubutton input{
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    margin: 70px 200px 10px 280px;
+}
