@@ -109,7 +109,8 @@ h1 {
     -webkit-animation: wobble 0.3s ease-in;
 }
 .buttonlogin input{
-    background-color: rgba(170, 110, 46, 0.356) !important;
+    background-color: rgba(170, 110, 46, 0.658) !important;
+    border: 1.5px solid rgb(0, 0, 0) !important;
 }
 
 @keyframes wobble {
