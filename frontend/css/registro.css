@@ -1,77 +1,144 @@
-*{
+/* ROOT Aqui va todo lo Vital (NO VAN CLASS | SOLO ETIQUETAS)*/
+:root {
+    --background: #edeeb4;
+    --color: #000000;
+    --primary-color: #0f3460;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    background: var(--background);
+    color: var(--color);
+    letter-spacing: 1px;
+
 }
 
-body{
-    width: 1500px;
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+/* ROOT Aqui va todo lo Vital (NO VAN CLASS | SOLO ETIQUETAS)*/
+
+.side-image {
+    width: 100%; /* Ancho deseado de la imagen */
+    height: 100%; /* La altura se ajusta automáticamente */
+    position: absolute; /* La imagen se posiciona de manera absoluta */
+    z-index: -1; /* Coloca la imagen detrás del contenido de inicio de sesión */
+}
+
+
+.opacity {
+    color: var(--color) !important;
+    opacity: 1;
     display: flex;
+    justify-content: center;
 }
 
-h1{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 40px;
-    margin-bottom: 3%;
-}
-form{
-    width: 810px;
-    text-align: center;
-
-}
-.formulario{
+.container {
     display: flex;
-    flex-direction: column;
-    font-size: 45px;
-    align-items: start;
-    size: 45px;
-    margin-left: 70px;
-
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
 }
-.Nombre{
+
+.form-container {
+    background-color: hsla(25, 36%, 48%, 0.603);
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 99;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.login-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1% 0px 1% 1%;
+    margin-left: -650px; /* Ajustamos el margen derecho para dar espacio a la imagen */
+    
 }
-.Nombre input{
-    height: 30px;
-    width: 555px;
-    margin-left: 30px;
-}
-
-.emailregistro{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1% 0px 1% 1%;
-}
-.emailregistro input{
-    height: 30px;
-    width: 555px;
-    margin-left: 30px;
-}
-.contraseñausuario{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1% 0px 1% 1%;
-}
-.contraseñausuario input{
-    height: 30px;
-    width: 555px;
-    margin-left: 30px;
-}
-
-.bienvenidoabreadspot{
-    width: 650px;
-    height: 770px;
-
-}
-.registroubutton input{
-    width: 150px;
-    height: 45px;
+.login-container form input {
+    display: block;
+    padding: 15px;
+    width: 135%;
+    margin: 2rem 0px 0px -40px;
+    color: var(--color);
+    outline: none;
+    background-color: #f7f7f71f;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
     font-size: 20px;
-    text-align: center;
-    margin: 70px 200px 10px 280px;
+    backdrop-filter: blur(15px);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.login-container form input:focus {
+    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+    animation: wobble 0.3s ease-in;
+    -webkit-animation: wobble 0.3s ease-in;
+}
+.buttonlogin input{
+    background-color: rgba(170, 110, 46, 0.356) !important;
+}
+
+@keyframes wobble {
+    0% {
+        transform: scale(1.025);
+        -webkit-transform: scale(1.025);
+        -moz-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+        -o-transform: scale(1.025);
+    }
+    25% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    75% {
+        transform: scale(1.025);
+        -webkit-transform: scale(1.025);
+        -moz-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+        -o-transform: scale(1.025);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
 }
