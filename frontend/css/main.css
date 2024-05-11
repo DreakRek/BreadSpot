@@ -43,20 +43,20 @@ body {
 }
 
 .heading_container h2 {
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
   position: relative;
   font-weight: bold;
   font-size: 2.5rem;
 }
 
 @font-face {
-  font-family: "SnellBT Regular";
+  /* font-family: "SnellBT Regular"; */
   src: url(../fonts/SnellBT-Regular.otf);
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "SnellBT Bold";
+  /* font-family: "SnellBT Bold"; */
   src: url(../fonts/SnellBT-Bold.otf);
   font-weight: 700;
 }
@@ -126,7 +126,7 @@ a:focus {
   font-size: 28px;
   font-weight: bold;
   color: #ffffff;
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
   color: #000000;
 }
 
@@ -274,7 +274,8 @@ a:focus {
   left: 0;
   width: 75%;
   height: 100%;
-  background-image: url(../images/slider-bg1.png);
+  background-color: blue;
+  /* background-image: url(../images/slider-bg1.png); */
   background-size: 100% 100%;
   z-index: 2;
 }
@@ -286,7 +287,8 @@ a:focus {
   right: 45px;
   width: 550px;
   height: 550px;
-  background-image: url(../images/slider-bg2.png);
+  background-color: purple;
+  /* background-image: url(../images/slider-bg2.png); */
   background-size: cover;
   background-position: bottom right;
   z-index: 1;
@@ -297,14 +299,15 @@ a:focus {
 }
 
 .slider_section .detail_box h1 {
+  color: black;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 30px;
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
 }
 
 .slider_section .detail_box h1 span {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .slider_section .detail_box a {
@@ -314,7 +317,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
   color: #ffffff;
   font-weight: 500;
   margin-top: 75px;
@@ -383,7 +386,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
   color: #46200b;
   font-weight: bold;
   margin-top: 25px;
@@ -529,7 +532,7 @@ a:focus {
 
 .chocolate_section .slick-prev:before,
 .chocolate_section .slick-next:before {
-  font-family: "FontAwesome";
+  /* font-family: "FontAwesome"; */
   position: relative;
   z-index: 2;
   color: #a04120;
@@ -546,7 +549,7 @@ a:focus {
 }
 
 .offer_section {
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
 }
 
 .offer_section .box {
@@ -580,7 +583,7 @@ a:focus {
 }
 
 .offer_section .box .detail-box a {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   display: inline-block;
   padding: 8px 30px;
   background-color: #46200b;
@@ -623,7 +626,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
   color: #46200b;
   font-weight: bold;
   margin-top: 25px;
@@ -648,7 +651,8 @@ a:focus {
 }
 
 .client_section .client_container {
-  background-image: url(../images/client-bg.png);
+  background-color: red;
+  /* background-image: url(../images/client-bg.png); */
   background-size: 90% 100%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -934,7 +938,7 @@ a:focus {
 }
 
 .info_section h4 {
-  font-family: "SnellBT Regular", sans-serif;
+  /* font-family: "SnellBT Regular", sans-serif; */
   margin-bottom: 15px;
 }
 
