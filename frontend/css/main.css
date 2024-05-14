@@ -44,9 +44,11 @@ body {
 
 .heading_container h2 {
   /* font-family: "SnellBT Regular", sans-serif; */
-  position: relative;
+  /*centrar div*/
   font-weight: bold;
   font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
@@ -672,10 +674,10 @@ a:focus {
 
 .client_section .client_container .box .img-box {
   position: relative;
-  width: 175px;
-  min-width: 175px;
+  width: 300px;
+  min-width: 300px;
   padding: 0 0 20px 20px;
-  margin-right: 25px;
+  margin-right: 115px;
 }
 
 .client_section .client_container .box .img-box img {
