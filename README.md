@@ -6,7 +6,7 @@
 
 ### Tan solo por 9.99$ ten la version Pan dorado tendras los mejores Spot para comprar pan
 
-##Tareas pendientes:
+## Tareas pendientes:
 - agregar boton de inicio y registro al lado de la "personita"
 - sacar parte de "quieres unirte a socios?"
 - agregar apartado "sobre nosotros"
