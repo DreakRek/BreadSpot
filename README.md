@@ -8,7 +8,7 @@
 
 ## Tareas pendientes:
 - agregar boton de inicio y registro al lado de la "personita"
-- sacar parte de "quieres unirte a socios?"
+- sacar parte de "quieres unirte a socios?" -- Listo
 - agregar apartado "sobre nosotros"
 - arreglar el apartado de socios
 - Crear un apartado de contactos
