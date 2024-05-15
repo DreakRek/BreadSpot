@@ -536,6 +536,11 @@ a:focus {
   width: 65px;
 }
 
+.client_section {
+  margin-top: 40px !important;
+  
+}
+
 .client_section .heading_container {
   margin-bottom: 45px;
   padding-left: 30%;
