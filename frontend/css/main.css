@@ -555,13 +555,16 @@ a:focus {
 }
 
 .client_section .client_container {
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(255, 170, 0, 0.416);
   /* background-image: url(../images/client-bg.png); */
   background-size: 90% 100%;
   background-position: bottom right;
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 75px 0 175px 0;
+  backdrop-filter: blur(20px);
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
 }
 
 .client_section .client_container .box {
