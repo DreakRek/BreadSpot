@@ -871,4 +871,13 @@ a:focus {
 }
 /*# sourceMappingURL=style.css.map */
 
-.sobreNosotros{}
+.sobreNosotros{
+  background-color: #a235de;
+}
+
+.nuestraMision{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+

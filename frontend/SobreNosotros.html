@@ -33,6 +33,43 @@
     <link href="css/responsive.css" rel="stylesheet" />
   
   </head>
+  
+  <style>
+    .client_section {
+      padding: 20px;
+    }
+    .client_container {
+      background-color: rgb(111, 117, 234);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+    .img-box img {
+      width: 200px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .detail-box {
+      margin-top: 5px;
+    }
+    .detail-box h4 {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    .detail-box p {
+      font-size: 1rem;
+    }
+    .fa-quote-left {
+      color: #fff;
+      margin-top: 10px;
+    }
+    .client_grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+  </style>
+
 <body>
   <header class="header_section">
     <div class="container-fluid">
@@ -70,6 +107,145 @@
     </div>
   </header>
 
+  <section class="client_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 px-0">
+          <div class="client_container">
+            <div class="heading_container">
+              <h2>
+                Sobre Nosotros
+              </h2>
+            </div>
+            <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="../frontend/assent/user.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <p>
+                        Nuestro proyecto nace desde la experiencia de ser un consumidor que, 
+                        al igual que la mayoría de chilenos, se vio en la necesidad y hasta 
+                        algunas veces en la preocupación por conseguir el diariamente consumido pan,
+                        el cual muchos podrían asumir o dar por sentado su obtención, pero creemos 
+                        firmemente en que no hay peor sentimiento que pasar de la tranquilidad rutinaria 
+                        de su compra, a darse cuenta en el último momento de su ausencia, para solucionar esto existe BreadSpot.
+                      </p>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="client_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 px-0">
+          <div class="client_container">
+            <div class="heading_container">
+              <h2>
+                Mision
+              </h2>
+            </div>
+            <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="../frontend/assent/user.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <p>El objetivo principal de BreadSpot es facilitar la comunicación entre compradores y vendedores, 
+                        con el fin de lograr una compra/venta efectiva del alimento más comprado y vendido del país; el pan, evitando los 
+                        problemas comunes con los que se topa el usuario en su búsqueda diaria de un local con este producto disponible.</p>
+                    <p>Desde estar en una zona nueva para ti, hasta cuando llegaste tarde a casa y tu panadería local ya está cerrada,
+                         para eso está BreadSpot, para que sepas dónde ir para que el pan no falte en tu mesa, ahorrándote el ya anticuado 
+                         viaje de local en local.</p>
+                      <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="client_section" style="background-color: rgb(111, 117, 234);">
+    <div class="container">
+      <div class="heading_container text-center mb-4">
+        <h2>Nuestro Equipo</h2>
+      </div>
+      <div class="client_grid">
+        <div class="client_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="../frontend/assent/email2.jpg" alt="email">
+            </div>
+            <div class="detail-box">
+              <h4>David Andrades</h4>
+              <p>DEV backend</p>
+            </div>
+          </div>
+        </div>
+        <div class="client_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="../frontend/assent/phone3333.png" alt="telefono">
+            </div>
+            <div class="detail-box">
+              <h4>Fabian Lizama</h4>
+              <p>DEV frontend</p>
+            </div>
+          </div>
+        </div>
+        <div class="client_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="../frontend/assent/phone3333.png" alt="telefono">
+            </div>
+            <div class="detail-box">
+              <h4>Flavio Cifuentes</h4>
+              <p>DEV backend</p>
+            </div>
+          </div>
+        </div>
+        <div class="client_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="../frontend/assent/phone3333.png" alt="telefono">
+            </div>
+            <div class="detail-box">
+              <h4>Francisca Zambrano</h4>
+              <p>DEV frontend</p>
+            </div>
+          </div>
+        </div>
+        <div class="client_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="../frontend/assent/phone3333.png" alt="telefono">
+            </div>
+            <div class="detail-box">
+              <h4>Ignacio Muñoz</h4>
+              <p>DEV backend</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
       <div class="container">
         <div class="sobreNosotros">
             <h1>Sobre Nosotros</h1>
@@ -81,8 +257,8 @@
                de su compra, a darse cuenta en el último momento de su ausencia, para solucionar esto existe BreadSpot</p>
         </div>
         <div class="nuestraMision">
-            <img src="assent/OIP.jpg">
-            <img src="assent/Captura de pantalla 2024-05-12 231110.png">
+            <img src="assent/OIP.jpg" class="img5">
+            <img src="assent/Captura de pantalla 2024-05-12 231110.png" class="img7">
 
             <h1>Nuestra Mision</h1>
             <p>El objetivo principal de BreadSpot es facilitar la comunicación entre compradores y vendedores, 
