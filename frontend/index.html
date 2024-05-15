@@ -32,7 +32,6 @@
   <link href="css/main.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -72,9 +71,13 @@
                   <a class="nav-link" href="contact.html">Contactos</a>
                 </li>
               </ul>
-              <div class="buttom-other-style">
-                <input class="masinfo" type="submit" value="Iniciar Sesión">
-                <input class="masinfo" type="submit" value="Registrarse">
+              <div id="auth-buttons" class="buttom-other-style">
+                <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+              </div>
+              <div id="user-info" class="buttom-other-style" style="display: none;">
+                <span id="username"></span>
+                <input class="masinfo" type="submit" value="Cerrar Sesión" onclick="logout()">
               </div>
             </div>
           </nav>
@@ -82,7 +85,7 @@
       </header>
       <!-- end header section -->
       <!--user section-->
-      
+
       <!--end of user section-->
       <!-- slider section -->
       <section class="slider_section ">
@@ -138,7 +141,7 @@
                       <h1>
                         Panaderia Santa Clara <br>
                         <span>
-                          La mas famosa de Hualpen 
+                          La mas famosa de Hualpen
                         </span>
                       </h1>
                     </div>
@@ -180,7 +183,7 @@
               <div class="welcom_container">
                 <h2>Bienvenido!</h2>
                 <div class="content_container">
-                  <p>BreadSpot es una aplicación pensada por y para aquellos momentos en los que 
+                  <p>BreadSpot es una aplicación pensada por y para aquellos momentos en los que
                     nos percatamos de la ausencia del alimento principal del hogar, durante el desayuno,
                     cena y a veces hasta en el almuerzo de cada familia chilena; es el pan el que nos acompaña,
                     y el que ubica a chile dentro del top 10 de consumidores de este alimento a nivel mundial,
@@ -188,11 +191,15 @@
                   </p>
                   <div class="buttom-other-style">
                     <h3>Usuario</h3>
-                    <input class="masinfo" type="submit" value="Iniciar Sesión">
-                    <input class="masinfo" type="submit" value="Registrarse">
+                    <div id="auth-buttons" class="buttom-other-style">
+                      <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                      <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+                    </div>
                     <h3>Vendedor</h3>
-                    <input class="masinfo" type="submit" value="Iniciar Sesión">
-                    <input class="masinfo" type="submit" value="Registrarse">
+                    <div id="auth-buttons" class="buttom-other-style">
+                      <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                      <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -201,7 +208,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="client_section layout_padding" style="padding-top: 0; padding-bottom: 0;">
       <div class="container-fluid">
         <div class="row">
@@ -225,8 +232,8 @@
                         </h4>
                         <p>
                           Me ha ayudado incontables veces cuando el tiempo me juega en contra,
-                           ya sea en una carrera contra el tiempo de vuelta de mi trabajo o mostrándome 
-                           la última panadería de mi zona en la que aún había.
+                          ya sea en una carrera contra el tiempo de vuelta de mi trabajo o mostrándome
+                          la última panadería de mi zona en la que aún había.
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -242,8 +249,8 @@
                           Javier Lagos
                         </h4>
                         <p>
-                          Me salvó completamente la semana pasada, me dirigía a mi negocio de confianza 
-                          en el horario de siempre y para mi sorpresa ya me había quedado sin pan, 
+                          Me salvó completamente la semana pasada, me dirigía a mi negocio de confianza
+                          en el horario de siempre y para mi sorpresa ya me había quedado sin pan,
                           entonces mi hijo me habló de la aplicación y él mismo encontró una panadería
                           de la que no nos habíamos percatado antes.
                         </p>
@@ -262,11 +269,11 @@
                         </h4>
                         <p>
                           Llegando por primera vez a la zona, me dirigía junto con mi esposa a cenar con mis suegros,
-                           poco pasó hasta que recibimos una llamada de estos últimos, pidiéndonos que por 
-                           favor les llevásemos pan para la cena. La preocupación se apoderó inmediatamente de mi, 
-                           ¿De dónde iba sacar pan a esta hora?, pero mi mujer ya tenía todo planeado, 
-                           en menos de 1 segundo la aplicación le mostró en donde conseguir pan, y las preocupaciones 
-                           se esfumaron junto con el hambre en una grata cena.
+                          poco pasó hasta que recibimos una llamada de estos últimos, pidiéndonos que por
+                          favor les llevásemos pan para la cena. La preocupación se apoderó inmediatamente de mi,
+                          ¿De dónde iba sacar pan a esta hora?, pero mi mujer ya tenía todo planeado,
+                          en menos de 1 segundo la aplicación le mostró en donde conseguir pan, y las preocupaciones
+                          se esfumaron junto con el hambre en una grata cena.
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -290,7 +297,7 @@
       </div>
     </section>
 
-    <section class="client_section" >
+    <section class="client_section">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 ml-auto">
@@ -314,7 +321,8 @@
                           Jairo Mella
                         </h4>
                         <p>
-                          Dueño de la panaderia & pasteleria RicoPan, Cuenta con 3 locales Ricopan repartidas por la zona del Bio Bio
+                          Dueño de la panaderia & pasteleria RicoPan, Cuenta con 3 locales Ricopan repartidas por la
+                          zona del Bio Bio
                         </p>
                         <p>
                           "Mi mision aqui es entregar el mejor pan y pastales para toda la zona del Bio Bio"
@@ -333,10 +341,12 @@
                           Carlos Cartagena
                         </h4>
                         <p>
-                          Dueño de la panaderia Castaño, Cuenta con varios locales Castaño repartidos por la zona del Bio Bio principalmente Concepcion
+                          Dueño de la panaderia Castaño, Cuenta con varios locales Castaño repartidos por la zona del
+                          Bio Bio principalmente Concepcion
                         </p>
                         <p>
-                          "Todo esto nacio de un sueño que tenia , iniciamos en la casa vendiendo pan y ahora contamos con varios locales repartidos entregando el mejor pan"
+                          "Todo esto nacio de un sueño que tenia , iniciamos en la casa vendiendo pan y ahora contamos
+                          con varios locales repartidos entregando el mejor pan"
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -352,10 +362,12 @@
                           Alan Hidalgo & Marta Clara
                         </h4>
                         <p>
-                          Dueños de la panaderia y pasteleria Santa Clara, Cuentan con locales Establecidos en hualpen y zonas de Talcahuano
+                          Dueños de la panaderia y pasteleria Santa Clara, Cuentan con locales Establecidos en hualpen y
+                          zonas de Talcahuano
                         </p>
                         <p>
-                          "Principalmente iniciamos con los pasteles y luego esto fue creciendo y terminamos haciendo el mejor pan de hualpen y con ello nos fuimos expandiendo"
+                          "Principalmente iniciamos con los pasteles y luego esto fue creciendo y terminamos haciendo el
+                          mejor pan de hualpen y con ello nos fuimos expandiendo"
                         </p>
                         <i class="fa fa-quote-left" aria-hidden="true"></i>
                       </div>
@@ -430,84 +442,84 @@
 
 
     <!-- info section -->
-   <!-- info section -->
-   <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row info_main_row">
-        <div class="col-md-7 col-lg-4">
-          <div class="info_links">
-            <h4>
-              Menu
-            </h4>
-            <div class="info_links_menu">
-              <a href="index.html">
-                Inicio
-              </a>
-              <a href="about.html">
-                Sobre Nosotros
-              </a>
-              <a href="chocolate.html">
-                Testimonios
-              </a>
-              <a href="testimonial.html">
-                Socios
-              </a>
-              <a href="contact.html">
-                Contacto
-              </a>
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row info_main_row">
+          <div class="col-md-7 col-lg-4">
+            <div class="info_links">
+              <h4>
+                Menu
+              </h4>
+              <div class="info_links_menu">
+                <a href="index.html">
+                  Inicio
+                </a>
+                <a href="about.html">
+                  Sobre Nosotros
+                </a>
+                <a href="chocolate.html">
+                  Testimonios
+                </a>
+                <a href="testimonial.html">
+                  Socios
+                </a>
+                <a href="contact.html">
+                  Contacto
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-7 col-lg-4">
-          <div class="info_links">
-            <h4>
-              Redes Sociales 
-            </h4>
-            <div class="info_links_menu">
-              <a href="index.html">
-                Instagram
-              </a>
-              <a href="about.html">
-                Twitter
-              </a>
-              <a href="chocolate.html">
-                Facebook
-              </a>
+          <div class="col-md-7 col-lg-4">
+            <div class="info_links">
+              <h4>
+                Redes Sociales
+              </h4>
+              <div class="info_links_menu">
+                <a href="index.html">
+                  Instagram
+                </a>
+                <a href="about.html">
+                  Twitter
+                </a>
+                <a href="chocolate.html">
+                  Facebook
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-7 col-lg-4">
-          <div class="info_links">
-            <h4>
-              Contactanos
-            </h4>
-            <div class="info_links_menu">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  San Martin 666, Concepción, Región del Biobío.
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Llama +56 9 9078 3423
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <span>
-                  breadspot@gmail.com
-                </span>
-              </a>
+          <div class="col-md-7 col-lg-4">
+            <div class="info_links">
+              <h4>
+                Contactanos
+              </h4>
+              <div class="info_links_menu">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    San Martin 666, Concepción, Región del Biobío.
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Llama +56 9 9078 3423
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope"></i>
+                  <span>
+                    breadspot@gmail.com
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end info_section -->
+    <!-- end info_section -->
 
     <!-- end info_section -->
 

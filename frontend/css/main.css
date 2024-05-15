@@ -63,12 +63,19 @@ body {
   padding: 6px;
 }
 
+
 .masinfo {
-  background-color: red;
-  color: blue;
-  margin-bottom: 5px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
+.masinfo:hover {
+  background-color: #45a049;
+}
 
 .heading_container {
   display: -webkit-box;
