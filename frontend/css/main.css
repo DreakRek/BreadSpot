@@ -747,6 +747,7 @@ a:focus {
 .info_section {
   background-color: #111111;
   color: #ffffff;
+  margin-top: 40px !important;
 }
 
 .info_section .info_form_social_row {
