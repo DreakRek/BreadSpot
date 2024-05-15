@@ -31,7 +31,41 @@
     <link href="css/main.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
-  
+    <style>
+      .client_section {
+        padding: 20px;
+      }
+      .client_container {
+        background-color: rgb(111, 117, 234);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+      }
+      .img-box img {
+        width: 200px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .detail-box {
+        margin-top: 5px;
+      }
+      .detail-box h4 {
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+      .detail-box p {
+        font-size: 1rem;
+      }
+      .fa-quote-left {
+        color: #fff;
+        margin-top: 10px;
+      }
+      .client_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      }
+    </style>
   </head>
 <body>
     <header class="header_section">
@@ -80,9 +114,60 @@
         </div>
     </header>
 
-    <div class="container">
+    <section class="client_section" style="background-color: rgb(111, 117, 234);">
+      <div class="container">
+        <div class="heading_container text-center mb-4">
+          <h2>Socios</h2>
+        </div>
+        <div class="client_grid">
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../frontend/assent/contacto1.png" alt="Jairo Mella">
+              </div>
+              <div class="detail-box">
+                <h4>Titulo</h4>
+                <p>Contacto</p>
+              </div>
+            </div>
+          </div>
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../frontend/assent/contacto2.png" alt="Carlos Cartagena">
+              </div>
+              <div class="detail-box">
+                <h4>Titulo</h4>
+                <p>Contacto</p>
+              </div>
+            </div>
+          </div>
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../frontend/assent/contacto3.png" alt="Alan Hidalgo & Marta Clara">
+              </div>
+              <div class="detail-box">
+                <h4>Titulo</h4>
+                <p>Contacto</p>
+              </div>
+            </div>
+          </div>
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../frontend/assent/contacto3.png" alt="Nuevo Socio">
+              </div>
+              <div class="detail-box">
+                <h4>Titulo</h4>
+                <p>Contacto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
 
     
     <section class="info_section layout_padding2">
