@@ -98,6 +98,11 @@ body {
   font-weight: bold;
   font-size: 2.5rem;
 }
+.header_section .buttom-other-style{
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+}
 
 @font-face {
   /* font-family: "SnellBT Regular"; */
@@ -137,7 +142,7 @@ a:focus {
 
 /*header section*/
 .hero_area {
-  height: calc(70vh - 45px);
+  height: calc(50vh - 45px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,26 +327,12 @@ a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 75%;
+  width: 100%;
   height: 50%;
   background-color: blue;
   /* background-image: url(../images/slider-bg1.png); */
   background-size: 100% 100%;
   z-index: 2;
-}
-
-.slider_section:after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  right: 45px;
-  width: 225px;
-  height: 225px;
-  background-color: purple;
-  /* background-image: url(../images/slider-bg2.png); */
-  background-size: cover;
-  background-position: bottom right;
-  z-index: 1;
 }
 
 .slider_section .detail_box {
@@ -350,7 +341,7 @@ a:focus {
 
 .slider_section .detail_box h1 {
   color: black;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 30px;
   /* font-family: "SnellBT Regular", sans-serif; */
@@ -692,16 +683,16 @@ a:focus {
   width: 65px;
 }
 
-.client_section .client_section2 .heading_container {
+.client_section .heading_container {
   margin-bottom: 45px;
   padding-left: 30%;
 }
 
-.client_section .client_section2 .img-box img {
+.client_section .img-box img {
   width: 100%;
 }
 
-.client_section .client_section2 .client_container {
+.client_section .client_container {
   background-color: rgb(255, 0, 0);
   /* background-image: url(../images/client-bg.png); */
   background-size: 90% 100%;
@@ -711,7 +702,7 @@ a:focus {
   padding: 75px 0 175px 0;
 }
 
-.client_section .client_section2 .client_container .box {
+.client_section .client_container .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,7 +712,7 @@ a:focus {
   padding: 0 150px 0 15px;
 }
 
-.client_section .client_section2 .client_container .box .img-box {
+.client_section .client_container .box .img-box {
   position: relative;
   width: 175px;
   min-width: 175px;
@@ -730,19 +721,19 @@ a:focus {
 }
 
 
-.client_section .client_section2 .client_container .box .img-box img {
+.client_section .client_container .box .img-box img {
   position: relative;
   z-index: 3;
 }
 
-.client_section .client_section2 .client_container .box .img-box:before {
+.client_section .client_container .box .img-box:before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 75%;
   height: 75%;
-  background-color: #ffffff;
+  background-color: #ff0000;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
 }
@@ -750,30 +741,30 @@ a:focus {
   margin-bottom: 50% !important;
 }
 
-.client_section .client_section2 .client_container .box .detail-box {
+.client_section .client_container .box .detail-box {
   margin-top: 45px;
 }
 
-.client_section .client_section2 .client_container .box .detail-box h4 {
+.client_section .client_container .box .detail-box h4 {
   font-weight: 600;
 }
 
-.client_section .client_section2 .client_container .box .detail-box p {
+.client_section .client_container .box .detail-box p {
   margin-top: 10px;
   margin-bottom: 25px;
 }
 
-.client_section .client_section2 .client_container .box .detail-box i {
+.client_section .client_container .box .detail-box i {
   font-size: 24px;
 }
 
-.client_section .client_section2 .carousel-indicators {
+.client_section .carousel-indicators {
   position: unset;
   margin: 0;
   margin-top: 45px;
 }
 
-.client_section .client_section2 .carousel-indicators li {
+.client_section .carousel-indicators li {
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -781,11 +772,11 @@ a:focus {
   opacity: 1;
 }
 
-.client_section .client_section2 .carousel-indicators li.active {
+.client_section .carousel-indicators li.active {
   background-color: #a04120;
 }
 
-.client_section .client_section2 .carousel_btn-box {
+.client_section .carousel_btn-box {
   position: absolute;
   top: 45%;
   right: 0;
@@ -801,8 +792,8 @@ a:focus {
   z-index: 3;
 }
 
-.client_section .client_section2 .carousel_btn-box .carousel-control-prev,
-.client_section .client_section2 .carousel_btn-box .carousel-control-next {
+.client_section .carousel_btn-box .carousel-control-prev,
+.client_section .carousel_btn-box .carousel-control-next {
   position: unset;
   width: 55px;
   height: 55px;
@@ -813,8 +804,8 @@ a:focus {
   margin: 2.5px 0;
 }
 
-.client_section .client_section2 .carousel_btn-box .carousel-control-prev:hover,
-.client_section .client_section2 .carousel_btn-box .carousel-control-next:hover {
+.client_section .carousel_btn-box .carousel-control-prev:hover,
+.client_section .carousel_btn-box .carousel-control-next:hover {
   color: #46200b;
 }
 
