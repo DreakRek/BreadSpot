@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>BreadSpot</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!--slick slider stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="main_body_content">
+
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              BreadSpot
+            </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Sobre nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="testimonial.html">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="socios.html">Socios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contactos</a>
+                </li>
+              </ul>
+              <div id="auth-buttons" class="buttom-other-style">
+                <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+              </div>
+              <div id="user-info" class="buttom-other-style" style="display: none;">
+                <span id="username"></span>
+                <input class="masinfo" type="submit" value="Cerrar Sesión" onclick="logout()">
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!--user section-->
+
+      <!--end of user section-->
+      <!-- slider section -->
+      <section class="slider_section ">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail_box">
+                      <h1>
+                        Panaderia el Castaño<br>
+                        <span>
+                          La mas famosa de Concepcion
+                        </span>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4 ml-auto">
+                    <div class="img-box">
+                      <img src="../frontend/assent/panaderia1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail_box">
+                      <h1>
+                        Panaderia Ricopan<br>
+                        <span>
+                          La mas famosa de San Pedro
+                        </span>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4 ml-auto">
+                    <div class="img-box">
+                      <img src="../frontend/assent/panaderia2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail_box">
+                      <h1>
+                        Panaderia Santa Clara <br>
+                        <span>
+                          La mas famosa de Hualpen
+                        </span>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="col-md-4 ml-auto">
+                    <div class="img-box">
+                      <img src="../frontend/assent/panaderia3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </section>
+      <!-- end slider section -->
+    </div>
+
+
+
+
+    <!-- client section -->
+
+    <section class="client_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 px-5">
+            <div class="client_container" style="background-color: slateblue !important;">
+              <div class="welcom_container">
+                <h2>Bienvenido!</h2>
+                <div class="content_container">
+                  <p>BreadSpot es una aplicación pensada por y para aquellos momentos en los que
+                    nos percatamos de la ausencia del alimento principal del hogar, durante el desayuno,
+                    cena y a veces hasta en el almuerzo de cada familia chilena; es el pan el que nos acompaña,
+                    y el que ubica a chile dentro del top 10 de consumidores de este alimento a nivel mundial,
+                    y nosotros te queremos ayudar a que nunca falte en tu mesa.
+                  </p>
+                  <div class="buttom-other-style">
+                    <h3>Usuario</h3>
+                    <div id="auth-buttons" class="buttom-other-style">
+                      <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                      <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+                    </div>
+                    <h3>Vendedor</h3>
+                    <div id="auth-buttons" class="buttom-other-style">
+                      <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                      <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="client_section layout_padding" style="padding-top: 0; padding-bottom: 0;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 px-5">
+            <div class="client_container">
+              <div class="heading_container">
+                <h2>
+                  Testimonios de usuarios
+                </h2>
+              </div>
+              <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="../frontend/assent/user.jpg" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Teresa González
+                        </h4>
+                        <p>
+                          Me ha ayudado incontables veces cuando el tiempo me juega en contra,
+                          ya sea en una carrera contra el tiempo de vuelta de mi trabajo o mostrándome
+                          la última panadería de mi zona en la que aún había.
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="../frontend/assent/user.jpg" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Javier Lagos
+                        </h4>
+                        <p>
+                          Me salvó completamente la semana pasada, me dirigía a mi negocio de confianza
+                          en el horario de siempre y para mi sorpresa ya me había quedado sin pan,
+                          entonces mi hijo me habló de la aplicación y él mismo encontró una panadería
+                          de la que no nos habíamos percatado antes.
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="../frontend/assent/user.jpg" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Pancho Melo
+                        </h4>
+                        <p>
+                          Llegando por primera vez a la zona, me dirigía junto con mi esposa a cenar con mis suegros,
+                          poco pasó hasta que recibimos una llamada de estos últimos, pidiéndonos que por
+                          favor les llevásemos pan para la cena. La preocupación se apoderó inmediatamente de mi,
+                          ¿De dónde iba sacar pan a esta hora?, pero mi mujer ya tenía todo planeado,
+                          en menos de 1 segundo la aplicación le mostró en donde conseguir pan, y las preocupaciones
+                          se esfumaron junto con el hambre en una grata cena.
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_btn-box">
+                  <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="client_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+          </div>
+          <div class="col-lg-12 px-5">
+            <div class="client_container" style="background-color: rgb(111, 117, 234);">
+              <div class="heading_container">
+                <h2>
+                  Socios
+                </h2>
+              </div>
+              <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="../frontend/assent/socio1.png" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Jairo Mella
+                        </h4>
+                        <p>
+                          Dueño de la panaderia & pasteleria RicoPan, Cuenta con 3 locales Ricopan repartidas por la
+                          zona del Bio Bio
+                        </p>
+                        <p>
+                          "Mi mision aqui es entregar el mejor pan y pastales para toda la zona del Bio Bio"
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="../frontend/assent/socio2.png" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Carlos Cartagena
+                        </h4>
+                        <p>
+                          Dueño de la panaderia Castaño, Cuenta con varios locales Castaño repartidos por la zona del
+                          Bio Bio principalmente Concepcion
+                        </p>
+                        <p>
+                          "Todo esto nacio de un sueño que tenia , iniciamos en la casa vendiendo pan y ahora contamos
+                          con varios locales repartidos entregando el mejor pan"
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="../frontend/assent/socio3.png" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Alan Hidalgo & Marta Clara
+                        </h4>
+                        <p>
+                          Dueños de la panaderia y pasteleria Santa Clara, Cuentan con locales Establecidos en hualpen y
+                          zonas de Talcahuano
+                        </p>
+                        <p>
+                          "Principalmente iniciamos con los pasteles y luego esto fue creciendo y terminamos haciendo el
+                          mejor pan de hualpen y con ello nos fuimos expandiendo"
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_btn-box">
+                  <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <span class="sr-only">Siguiente</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end client section -->
+
+
+    <!-- contact section -->
+
+    <!-- <section class="contact_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+            <div class="form_container">
+              <div class="heading_container">
+                <h2>
+                  Quieres unirte al equipo de socios
+                </h2>
+              </div>
+              <form action="">
+                <div>
+                  <input type="text" placeholder="Full Name " />
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone number" />
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div>
+                  <input type="text" class="message-box" placeholder="Message" />
+                </div>
+                <div class="d-flex ">
+                  <button>
+                    SEND NOW
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6  px-0">
+            <div class="map_container">
+              <div class="map">
+                <div id="googleMap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- end contact section -->
+
+
+    <!-- info section -->
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row info_main_row">
+          <div class="col-md-7 col-lg-4">
+            <div class="info_links">
+              <h4>
+                Menu
+              </h4>
+              <div class="info_links_menu">
+                <a href="index.html">
+                  Inicio
+                </a>
+                <a href="about.html">
+                  Sobre Nosotros
+                </a>
+                <a href="chocolate.html">
+                  Testimonios
+                </a>
+                <a href="testimonial.html">
+                  Socios
+                </a>
+                <a href="contact.html">
+                  Contacto
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-4">
+            <div class="info_links">
+              <h4>
+                Redes Sociales
+              </h4>
+              <div class="info_links_menu">
+                <a href="index.html">
+                  Instagram
+                </a>
+                <a href="about.html">
+                  Twitter
+                </a>
+                <a href="chocolate.html">
+                  Facebook
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-4">
+            <div class="info_links">
+              <h4>
+                Contactanos
+              </h4>
+              <div class="info_links_menu">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>
+                    San Martin 666, Concepción, Región del Biobío.
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>
+                    Llama +56 9 9078 3423
+                  </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope"></i>
+                  <span>
+                    breadspot@gmail.com
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info_section -->
+
+    <!-- end info_section -->
+
+  </div>
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <div class="container">
+      <div class="col-md-11 col-lg-8 mx-auto">
+        <p>
+          &copy; <span id="displayYear"></span> Derechos reservados por
+          <a href="https://html.design/">BreadSpot</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script> -->
+  <!-- End Google Map -->
+
+</body>
+
+</html>
