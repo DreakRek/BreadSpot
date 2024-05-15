@@ -578,7 +578,7 @@ a:focus {
   bottom: 0;
   width: 75%;
   height: 75%;
-  background-color: #ff0000;
+  background-color: #ffffff00;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
 }
@@ -870,3 +870,5 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.sobreNosotros{}
