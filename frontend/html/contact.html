@@ -15,7 +15,7 @@
   
   
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/frontend/css/bootstrap.css" />
     <!--slick slider stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
@@ -24,14 +24,48 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
     <!-- slick slider -->
   
-    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="/frontend/css/slick-theme.css" />
     <!-- font awesome style -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/frontend/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="/frontend/css/main.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-  
+    <link href="/frontend/css/responsive.css" rel="stylesheet" />
+    <style>
+      .client_section {
+        padding: 20px;
+      }
+      .client_container {
+        background-color: rgb(111, 117, 234);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px;
+      }
+      .img-box img {
+        width: 200px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .detail-box {
+        margin-top: 5px;
+      }
+      .detail-box h4 {
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+      .detail-box p {
+        font-size: 1rem;
+      }
+      .fa-quote-left {
+        color: #fff;
+        margin-top: 10px;
+      }
+      .client_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      }
+    </style>
   </head>
 <body>
     <header class="header_section">
@@ -52,7 +86,7 @@
                   <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">Sobre nosotros</a>
+                  <a class="nav-link" href="SobreNosotros.html">Sobre nosotros</a>
                 </li>
 
                 <li class="nav-item">
@@ -65,93 +99,70 @@
                   <a class="nav-link" href="contact.html">Contactos</a>
                 </li>
               </ul>
+              <div class="quote_btn-container">
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+                <a href="">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </nav>
         </div>
     </header>
 
-    <section class="client_section" >
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-          </div>
-          <div class="col-lg-12 px-5">
-            <div class="client_container" style="background-color: rgb(111, 117, 234);">
-              <div class="heading_container">
-                <h2>
-                  Socios
-                </h2>
+    <section class="client_section" style="background-color: rgb(111, 117, 234);">
+      <div class="container">
+        <div class="heading_container text-center mb-4">
+          <h2>¡Contactanos!</h2>
+        </div>
+        <div class="client_grid">
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../frontend/assent/email2.jpg" alt="email">
               </div>
-              <div id="customCarousel2" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="box">
-                      <div class="img-box">
-                        <img src="../frontend/assent/socio1.png" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h4>
-                          Jairo Mella
-                        </h4>
-                        <p>
-                          Dueño de la panaderia & pasteleria RicoPan, Cuenta con 3 locales Ricopan repartidas por la zona del Bio Bio
-                        </p>
-                        <p>
-                          "Mi mision aqui es entregar el mejor pan y pastales para toda la zona del Bio Bio"
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="box">
-                      <div class="img-box">
-                        <img src="../frontend/assent/socio2.png" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h4>
-                          Carlos Cartagena
-                        </h4>
-                        <p>
-                          Dueño de la panaderia Castaño, Cuenta con varios locales Castaño repartidos por la zona del Bio Bio principalmente Concepcion
-                        </p>
-                        <p>
-                          "Todo esto nacio de un sueño que tenia , iniciamos en la casa vendiendo pan y ahora contamos con varios locales repartidos entregando el mejor pan"
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="box">
-                      <div class="img-box">
-                        <img src="../frontend/assent/socio3.png" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h4>
-                          Alan Hidalgo & Marta Clara
-                        </h4>
-                        <p>
-                          Dueños de la panaderia y pasteleria Santa Clara, Cuentan con locales Establecidos en hualpen y zonas de Talcahuano
-                        </p>
-                        <p>
-                          "Principalmente iniciamos con los pasteles y luego esto fue creciendo y terminamos haciendo el mejor pan de hualpen y con ello nos fuimos expandiendo"
-                        </p>
-                        <i class="fa fa-quote-left" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel_btn-box">
-                  <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
-                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                    <span class="sr-only">Anterior</span>
-                  </a>
-                  <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    <span class="sr-only">Siguiente</span>
-                  </a>
-                </div>
+              <div class="detail-box">
+                <h4>Email</h4>
+                <p>breadspot@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../frontend/assent/phone3333.png" alt="telefono">
+              </div>
+              <div class="detail-box">
+                <h4>Télefono</h4>
+                <p>+56 9 9078 3423</p>
+              </div>
+            </div>
+          </div>
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../frontend/assent/redes2.webp" alt="redessociales">
+              </div>
+              <div class="detail-box">
+                <h4>Redes Sociales</h4>
+                </i><p>Instagram <br>@BreadSpot</p>
+                </i><p>Twitter <br>@BreadSpot </p>
+                </i><p>Facebook <br>BreadSpot </p>
+              </div>
+            </div>
+          </div>
+          <div class="client_container">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../frontend/assent/direction.png" alt="direccion">
+              </div>
+              <div class="detail-box">
+                <h4>Dirección</h4>
+                <p>San Martin 666, Concepción, Región del Biobío.</p>
               </div>
             </div>
           </div>
@@ -159,6 +170,8 @@
       </div>
     </section>
 
+
+    
     <section class="info_section layout_padding2">
       <div class="container">
         <div class="row info_main_row">
@@ -234,7 +247,6 @@
         </div>
       </div>
     </section>
-  
   <!-- footer section -->
   <footer class="container-fluid footer_section">
     <div class="container">
@@ -249,13 +261,13 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="/frontend/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  <script src="/frontend/js/bootstrap.js"></script>
   <!-- slick slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="/frontend/js/custom.js"></script>
 
 </body>
 
