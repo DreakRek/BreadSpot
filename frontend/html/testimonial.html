@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonios <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="testimonial.html">Testimonios</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="socios.html">Socios</a>
@@ -72,6 +72,14 @@
                   <a class="nav-link" href="contact.html">Contactos</a>
                 </li>
               </ul>
+              <div id="auth-buttons-header" class="buttom-header-style">
+                <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+                <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+              </div>
+              <div id="user-info" class="buttom-other-style" style="display: none;">
+                <span id="username"></span>
+                <input class="masinfo" type="submit" value="Cerrar Sesión" onclick="logout()">
+              </div>
             </div>
           </nav>
         </div>
@@ -266,13 +274,13 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="/frontend/js/jquery-3.4.1.min.js"></script>
+  <script src="../../frontend/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="/frontend/js/bootstrap.js"></script>
+  <script src="../../frontend/js/bootstrap.js"></script>
   <!-- slick slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
   <!-- custom js -->
-  <script src="/frontend/js/custom.js"></script>
+  <script src="../../frontend/js/custom.js"></script>
   <!-- Google Map -->
 
 </body>

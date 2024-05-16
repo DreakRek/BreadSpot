@@ -68,51 +68,49 @@
     </style>
   </head>
 <body>
-    <header class="header_section">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              BreadSpot
-            </a>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          BreadSpot
+        </a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="SobreNosotros.html">Sobre nosotros</a>
-                </li>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SobreNosotros.html">Sobre nosotros</a>
+            </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="socios.html">Socios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contactos</a>
-                </li>
-              </ul>
-              <div class="quote_btn-container">
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-                <a href="">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          </nav>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="socios.html">Socios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contactos</a>
+            </li>
+          </ul>
+          <div id="auth-buttons-header" class="buttom-header-style">
+            <input id="login-btn" class="masinfo" type="submit" value="Iniciar Sesión" onclick="login()">
+            <input id="register-btn" class="masinfo" type="submit" value="Registrarse" onclick="register()">
+          </div>
+          <div id="user-info" class="buttom-other-style" style="display: none;">
+            <span id="username"></span>
+            <input class="masinfo" type="submit" value="Cerrar Sesión" onclick="logout()">
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
     <section class="client_section" style="background-color: rgb(111, 117, 234);">
       <div class="container">
@@ -261,13 +259,13 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="/frontend/js/jquery-3.4.1.min.js"></script>
+  <script src="../../frontend/js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
-  <script src="/frontend/js/bootstrap.js"></script>
+  <script src="../../frontend/js/bootstrap.js"></script>
   <!-- slick slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
   <!-- custom js -->
-  <script src="/frontend/js/custom.js"></script>
+  <script src="../../frontend/js/custom.js"></script>
 
 </body>
 
