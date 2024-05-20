@@ -63,7 +63,7 @@ function login() {
 
 function register() {
     // Aquí iría la lógica para el registro
-    alert(`Hola! Fuiste registrado te llamas Juan .-. BACKEND A TRABAJAR MIERDA .`);
+    alert(`Hola! Fuiste registrado te llamas Juan.`);
     console.log('Registro');
 }
 
